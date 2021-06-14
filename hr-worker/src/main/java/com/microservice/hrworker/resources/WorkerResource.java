@@ -34,7 +34,7 @@ public class WorkerResource {
 	@GetMapping("/{workerId}")
 	public ResponseEntity<Worker> findById(@PathVariable Long workerId) {
 		
-		logger.info("PORT = " + env.getProperty("local.server.port"));
+		logger.info("PORT = " + env.getProperty("local.server.port")); // para imprimir a porta
 		
 		Worker worker = repository.findById(workerId).get(); // .get porque é um Optional
 		return ResponseEntity.ok(worker);
