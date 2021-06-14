@@ -34,14 +34,14 @@ public class WorkerResource {
 	@GetMapping("/{workerId}")
 	public ResponseEntity<Worker> findById(@PathVariable Long workerId) {
 	
-	/*  Teste de timeout
-	 * 
+	    // Teste de timeout
+	 
 		try {
 			Thread.sleep(3000L);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		} */
+		}
 		
 		logger.info("PORT = " + env.getProperty("local.server.port")); // para imprimir a porta
 		
