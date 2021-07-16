@@ -20,7 +20,7 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
 	
 	private static final String[] OPERATOR = {"/hr-worker/**"}; // definindo as rotas para o user que for operator
 	
-	private static final String[] ADMIN = {"/hr-payroll/**", "/hr-user/**"};
+	private static final String[] ADMIN = {"/hr-payroll/**", "/hr-user/**", "/actuator/**", "/hr-worker/actuator/**", "/hr-oauth/actuator/**"};
 	
 	
 	// método para receber o token
